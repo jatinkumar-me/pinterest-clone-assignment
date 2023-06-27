@@ -7,7 +7,7 @@ export type UnsplashImageType = {
   };
   height: number;
   width: number;
-  alt_description: string;
+  alt_description?: string;
 };
 
 export type UnsplashResponseType = UnsplashImageType[];

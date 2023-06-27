@@ -14,9 +14,13 @@ export default function Pin({ image }: PropType) {
         <IconContext.Provider value={{ size: "20px" }}>
           <button className={styles.saveButton}>Save</button>
           <div className={styles.bottomButtons}>
-            <button>
+            <button
+              onClick={() => {
+                window.open(image.urls.regular, "_blank", "noreferrer");
+              }}
+            >
               <GoArrowUpRight />
-              {image.alt_description.slice(0,5)}
+              {image.urls.regular.slice(0, 5)}
             </button>
 
             <div className={styles.bottomButtonsRight}>
