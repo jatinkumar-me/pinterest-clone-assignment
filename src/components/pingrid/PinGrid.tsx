@@ -23,6 +23,8 @@ export default function PinGrid() {
     [isLoading]
   );
 
+  if(isError) return <p>Error loading images!</p>
+
   return (
     <main>
       <div className={styles.grid}>
@@ -42,7 +44,6 @@ export default function PinGrid() {
         ))}
       </div>
       <IconContext.Provider value={{ size: "5rem" }}>
-        {isError && <p>Error loading images!</p>}
         {isLoading && (
           <div className={styles.loadingContainer}>
             <PiSpinner className={styles.loading}/>
