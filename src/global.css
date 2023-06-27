@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  --card_width: 250px;
+  --row_increment: 10px;
+  --card_border_radius: 16px;
+  --card_small: 26;
+  --card_medium: 33;
+  --card_large: 45;
+  --red: #E60023;
+  --red-dark: #6e0111;
+}
+
+button {
+  color: black;
+  font-weight: bold;
+  font-size: 0.8em;
+  overflow: hidden;
+  border: none;
+  border-radius: 1.75em;
+  padding: 0.8em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.button-icon{
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}

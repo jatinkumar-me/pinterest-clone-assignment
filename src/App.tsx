@@ -1,9 +1,14 @@
+import Navbar from "./components/navbar/Navbar";
+import PinGrid from "./components/pingrid/PinGrid";
+import "./global.css";
 
-function App() {
-
+const App: React.FC = () => {
   return (
-  <div>App hi</div>
-  )
-}
+    <>
+      <Navbar />
+      <PinGrid />
+    </>
+  );
+};
 
-export default App
+export default App;

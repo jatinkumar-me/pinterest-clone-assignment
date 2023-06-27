@@ -1,0 +1,51 @@
+.pin {
+  height: 100%;
+  position: relative;
+  border-radius: var(--card_border_radius);
+  overflow: hidden;
+}
+
+.pin:hover .overlay{
+    visibility: visible;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+  width: var(--card_width);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    visibility: hidden;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.saveButton{
+    background-color: var(--red);
+    padding: 1em;
+    color: white;
+}
+.saveButton:hover{
+    background-color: var(--red-dark);
+    color: white;
+}
+
+.bottomButtons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottomButtonsRight{
+    display: flex;
+    gap: 0.3rem;
+}
